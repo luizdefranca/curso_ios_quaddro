@@ -8,5 +8,11 @@
 
 import Foundation
 
-print("Hello, World!")
+print("Insira o seu nome: ")
+var nome = readLine()!
 
+print("Insira a sua idade: ")
+
+var idadeString = readLine()!
+var idadeInteiro = Int(idadeString)!
+print("olá \(nome), seja bem vindo ao curso de swift e parabéns pelos \(idadeInteiro)")
