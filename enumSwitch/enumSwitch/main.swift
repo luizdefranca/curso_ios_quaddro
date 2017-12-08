@@ -1,12 +1,30 @@
-//
-//  main.swift
-//  enumSwitch
-//
-//  Created by LuizRamos on 08/12/17.
-//  Copyright © 2017 LuizRamos. All rights reserved.
-//
 
 import Foundation
 
-print("Hello, World!")
+/*
+ 
+ Enum Switch
+ 
+ */
 
+enum Naipes : String{
+    
+    case copas = "❤️"
+    case espadas = "♠️"
+    case ouros = "♦️"
+    case paus = "♣️"
+}
+
+struct Carta{
+    var simbolo : String
+    var naipe : Naipes
+}
+
+var zap = Carta (simbolo: "K", naipe: .paus)
+
+switch zap.naipe{
+case .copas:
+        print("Eh copas")
+default:
+    print("Pede 6!")
+}
