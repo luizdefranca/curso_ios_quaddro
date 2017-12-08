@@ -20,6 +20,13 @@ import Foundation
  for controle in 0...5{
  bloco a ser executado
  }
+ 
+ 
+ Criando um intervalo para o for com passos
+ 
+ for count in stride(from: 11, through: 1, by: -2){
+    print(count)
+ }
  */
 
 //For in
@@ -41,4 +48,8 @@ var fruteira = ["🍑", "🍊", "🥑", "🍍", "🍇"]
 
 for fruta in fruteira{
     print("Fruta do dia: \(fruta)")
+}
+
+for count in stride(from: 11, through: 1, by: -2){
+    print(count)
 }

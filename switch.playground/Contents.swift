@@ -18,6 +18,24 @@
  default:
     caso não seja nenhum dos valores anteriores
  }
+ 
+ É possível ser utilizado as faixas de valores com (...) para os cases
+ switch grade{
+     case 0...5 :
+     print("reprovado por média")
+
+     case 5<..7: do {
+     print("aprovado por média")
+     }
+     case 7<..9: do {
+     print("aprovado com mérito")
+     }
+     case 9<..10:
+     print("aprovado com louvor")
+ }
+ 
+ 
+ 
  */
 
 var consideracao = 10
@@ -84,4 +102,22 @@ case 1:
 
 default:
     print("ter uma foto no crachá")
+}
+
+var grade = 3.4
+switch grade{
+case 0..<5: do {
+    print("reprovado por média")
+    }
+case 5..<7: do {
+    print("aprovado por média")
+    }
+case 7..<9: do {
+    print("aprovado com mérito")
+    }
+case 9..<10: do {
+    print("aprovado com louvor")
+}
+default:
+    print("ok")
 }

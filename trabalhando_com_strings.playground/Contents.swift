@@ -2,6 +2,16 @@
  
  Strings
     São sequências de caracteres (texto)
+ 
+ Caracteres especiais
+ \n -> line feed ou nova linha
+ \t -> tabulação horizontal
+ \\ -> usado para imprimir uma barra invertida
+ \r -> carriage return ou posiciona o curso no início da corrente linha
+ \" -> usado para inserir aspas duplas
+ \' -> usado para inserir aspas simples
+ \0 -> caracter Null
+ \u{n} -> usado para inserir um caracter Unicode
  */
 
 var minhaStringVazia = ""
