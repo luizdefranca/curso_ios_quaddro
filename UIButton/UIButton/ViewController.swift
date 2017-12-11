@@ -29,8 +29,18 @@ class ViewController: UIViewController {
         
         //mudando o background
         botazinho.backgroundColor = .gray
+        
+        //mundando a cor do texto
+        botazinho.setTitleColor(UIColor.white, for: .normal )
+        
+        //adicionando um método ao botao
+        
+        botazinho.addTarget(self, action: #selector(apertouBotao), for: UIControlEvents.touchUpInside)
     }
 
+    @objc func apertouBotao(){
+        print("Botao funcionando...")
+    }
 
 }
 
