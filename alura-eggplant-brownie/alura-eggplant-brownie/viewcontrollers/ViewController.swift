@@ -14,10 +14,14 @@ class ViewController: UIViewController {
     @IBOutlet var happinessField : UITextField!
     
     @IBAction func add(){
-        let name : String = self.nameField.text!
-        
-        let happiness : Int = Int(self.nameField.text!)!
-        print("Ok.. esta funcionando")
+        if nameField == nil || happinessField == nil {
+            return
+        }
+        let name = nameField!.text!
+        if let happiness = Int(happinessField!.text!) {
+            let meal = Meal(happiness: happiness, name: name)
+            print("Eaten \(meal.name) with happiness \(meal.happiness)")
+        }
     }
 
 

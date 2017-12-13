@@ -15,6 +15,8 @@
 		C2166ED31FE0617E00B9387C /* alura_eggplant_brownieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2166ED21FE0617E00B9387C /* alura_eggplant_brownieTests.swift */; };
 		C2166EDE1FE0617E00B9387C /* alura_eggplant_brownieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2166EDD1FE0617E00B9387C /* alura_eggplant_brownieUITests.swift */; };
 		C2166EEC1FE0723600B9387C /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2166EEB1FE0723500B9387C /* Meal.swift */; };
+		C2E241721FE177A900DC4CFC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E241711FE177A900DC4CFC /* Item.swift */; };
+		C2E241771FE1C7F600DC4CFC /* MealsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E241761FE1C7F600DC4CFC /* MealsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		C2166EDD1FE0617E00B9387C /* alura_eggplant_brownieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alura_eggplant_brownieUITests.swift; sourceTree = "<group>"; };
 		C2166EDF1FE0617E00B9387C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2166EEB1FE0723500B9387C /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		C2E241711FE177A900DC4CFC /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		C2E241761FE1C7F600DC4CFC /* MealsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +104,12 @@
 			isa = PBXGroup;
 			children = (
 				C2166EBD1FE0617E00B9387C /* AppDelegate.swift */,
-				C2166EBF1FE0617E00B9387C /* ViewController.swift */,
-				C2166EC11FE0617E00B9387C /* Main.storyboard */,
+				C2E241751FE1822200DC4CFC /* viewcontrollers */,
+				C2E241741FE1802500DC4CFC /* views */,
 				C2166EC41FE0617E00B9387C /* Assets.xcassets */,
 				C2166EC61FE0617E00B9387C /* LaunchScreen.storyboard */,
 				C2166EC91FE0617E00B9387C /* Info.plist */,
-				C2166EEB1FE0723500B9387C /* Meal.swift */,
+				C2E241731FE17FC900DC4CFC /* models */,
 			);
 			path = "alura-eggplant-brownie";
 			sourceTree = "<group>";
@@ -126,6 +130,32 @@
 				C2166EDF1FE0617E00B9387C /* Info.plist */,
 			);
 			path = "alura-eggplant-brownieUITests";
+			sourceTree = "<group>";
+		};
+		C2E241731FE17FC900DC4CFC /* models */ = {
+			isa = PBXGroup;
+			children = (
+				C2166EEB1FE0723500B9387C /* Meal.swift */,
+				C2E241711FE177A900DC4CFC /* Item.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		C2E241741FE1802500DC4CFC /* views */ = {
+			isa = PBXGroup;
+			children = (
+				C2166EC11FE0617E00B9387C /* Main.storyboard */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		C2E241751FE1822200DC4CFC /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				C2166EBF1FE0617E00B9387C /* ViewController.swift */,
+				C2E241761FE1C7F600DC4CFC /* MealsTableViewController.swift */,
+			);
+			path = viewcontrollers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +292,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2E241771FE1C7F600DC4CFC /* MealsTableViewController.swift in Sources */,
+				C2E241721FE177A900DC4CFC /* Item.swift in Sources */,
 				C2166EC01FE0617E00B9387C /* ViewController.swift in Sources */,
 				C2166EEC1FE0723600B9387C /* Meal.swift in Sources */,
 				C2166EBE1FE0617E00B9387C /* AppDelegate.swift in Sources */,
