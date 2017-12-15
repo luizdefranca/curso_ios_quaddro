@@ -6,49 +6,39 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller Add Meal-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="alura_eggplant_brownie" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewControllerAddMeal" customModule="alura_eggplant_brownie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYX-XM-ZCf">
-                                <rect key="frame" x="27" y="68" width="55" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYX-XM-ZCf">
+                                <rect key="frame" x="16" y="90" width="55" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Happiness: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dba-fy-giz">
-                                <rect key="frame" x="27" y="130" width="90" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ex: Eggplant Bronwie" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fA0-hc-zdf">
-                                <rect key="frame" x="123" y="68" width="236" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ex: Eggplant Bronwie" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fA0-hc-zdf">
+                                <rect key="frame" x="123" y="90" width="236" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="namePhonePad"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1 sad and 5 very happy" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dKy-wL-Jwl">
-                                <rect key="frame" x="123" y="126" width="236" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1 sad and 5 very happy" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dKy-wL-Jwl">
+                                <rect key="frame" x="123" y="148" width="236" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEi-ha-Ch4">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEi-ha-Ch4">
                                 <rect key="frame" x="147" y="256" width="80" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Add">
@@ -58,8 +48,40 @@
                                     <action selector="add" destination="BYZ-38-t0r" eventType="touchUpInside" id="VWn-0B-5ZA"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="axV-ir-ve2">
+                                <rect key="frame" x="16" y="327" width="343" height="320"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="g9x-1w-eJs"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happiness: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dba-fy-giz">
+                                <rect key="frame" x="16" y="151" width="90" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fA0-hc-zdf" firstAttribute="leading" secondItem="dKy-wL-Jwl" secondAttribute="leading" id="1Ke-4t-qSr"/>
+                            <constraint firstItem="sEi-ha-Ch4" firstAttribute="top" secondItem="dKy-wL-Jwl" secondAttribute="bottom" constant="78" id="542-2J-Ot5"/>
+                            <constraint firstAttribute="bottom" secondItem="axV-ir-ve2" secondAttribute="bottom" constant="20" symbolic="YES" id="9TK-Al-2rw"/>
+                            <constraint firstItem="axV-ir-ve2" firstAttribute="top" secondItem="sEi-ha-Ch4" secondAttribute="bottom" constant="38" id="DSv-AB-if9"/>
+                            <constraint firstItem="NYX-XM-ZCf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Jwb-1E-CkD"/>
+                            <constraint firstItem="sEi-ha-Ch4" firstAttribute="centerX" secondItem="axV-ir-ve2" secondAttribute="centerX" id="N1r-Ca-CH3"/>
+                            <constraint firstItem="fA0-hc-zdf" firstAttribute="trailing" secondItem="dKy-wL-Jwl" secondAttribute="trailing" id="Q7d-Bh-yP4"/>
+                            <constraint firstItem="NYX-XM-ZCf" firstAttribute="top" secondItem="fA0-hc-zdf" secondAttribute="top" id="TAP-OD-AtD"/>
+                            <constraint firstItem="dKy-wL-Jwl" firstAttribute="trailing" secondItem="axV-ir-ve2" secondAttribute="trailing" id="aL1-HU-50Q"/>
+                            <constraint firstItem="Dba-fy-giz" firstAttribute="baseline" secondItem="dKy-wL-Jwl" secondAttribute="baseline" id="ay1-iY-ERF"/>
+                            <constraint firstItem="dKy-wL-Jwl" firstAttribute="top" secondItem="fA0-hc-zdf" secondAttribute="bottom" constant="28" id="dBE-dY-nHf"/>
+                            <constraint firstItem="NYX-XM-ZCf" firstAttribute="leading" secondItem="Dba-fy-giz" secondAttribute="leading" id="m6C-bK-Xtg"/>
+                            <constraint firstItem="sEi-ha-Ch4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="nCt-rx-659"/>
+                            <constraint firstItem="NYX-XM-ZCf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="nPF-ON-o9i"/>
+                            <constraint firstItem="dKy-wL-Jwl" firstAttribute="leading" secondItem="Dba-fy-giz" secondAttribute="trailing" constant="17" id="xtL-cl-gff"/>
+                            <constraint firstItem="fA0-hc-zdf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="z9p-tL-ukg"/>
+                            <constraint firstItem="Dba-fy-giz" firstAttribute="leading" secondItem="axV-ir-ve2" secondAttribute="leading" id="zFR-Tv-dQV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -69,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="732" y="121"/>
+            <point key="canvasLocation" x="732" y="120.98950524737631"/>
         </scene>
         <!--Meals Table View Controller-->
         <scene sceneID="3tS-1Y-pg7">
@@ -97,7 +119,7 @@
                     <navigationItem key="navigationItem" id="27L-g2-yUz">
                         <barButtonItem key="rightBarButtonItem" title="Add" id="kYu-G7-pLy">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="H19-sD-4QE"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="mealAddSegue" id="H19-sD-4QE"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
