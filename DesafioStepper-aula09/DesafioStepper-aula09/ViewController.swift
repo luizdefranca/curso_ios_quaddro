@@ -46,20 +46,21 @@ class ViewController: UIViewController {
     }
     
 
-    func ehPrimo(_ numero: Int) -> Bool{
+    func ehPrimo(_ number: Int) -> Bool{
         
-        if(numero == 1 || numero == 2 || numero == 3){
+        if(number == 1 || number == 2 || number == 3){
             return true
         }
-        for n in 2...numero/2 {
-            print(numero % n, numero)
-            if numero % n == 0{
+        for n in 2...number/2 {
+            print(number % n, number)
+            if number % n == 0{
                 
                 return false
             }
         }
         
         return true
+        
     }
     
     @IBAction func reset(_ sender: UIButton) {
