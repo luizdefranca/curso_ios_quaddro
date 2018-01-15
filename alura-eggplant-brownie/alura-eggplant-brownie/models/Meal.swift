@@ -12,11 +12,14 @@ import UIKit
 final class Meal{
     let happiness: Int
     let name: String
-    let items = Array<Item>([])
+    let items : [Item]
     
-    init(happiness: Int, name: String) {
-    self.happiness = happiness
-    self.name = name
+    
+    
+    init(happiness: Int, name: String, items: Array<Item> = []) {
+        self.happiness = happiness
+        self.name = name
+        self.items = items
     }
     
     func allCalories() -> Double{
@@ -27,4 +30,12 @@ final class Meal{
         return sum
     }
     
+    func detail() -> String{
+        var message = "Happiness: \(self.happiness)"
+        for item in items{
+            message += ", \(item.name) - calories: \(item.calories) \n"
+        }
+        
+        return message
+    }
 }

@@ -39,5 +39,5 @@ var quantidadeDeFatiasPorPessoa = quantidadeFatias/quantidadeDePessoas
 var quantidadeDeFatiasQueSobram = quantidadeFatias % quantidadeDePessoas
 
 print("Quantidade de fatias por pessoas: \(quantidadeDeFatiasPorPessoa)")
-print("Quantidades de fatias que \"sobram\ \(quantidadeDeFatiasQueSobram)")
+print("Quantidades de fatias que \"sobram\"  \(quantidadeDeFatiasQueSobram)")
 

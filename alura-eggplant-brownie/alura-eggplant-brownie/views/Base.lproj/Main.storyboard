@@ -53,6 +53,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="g9x-1w-eJs"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="eN1-JW-PvX"/>
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happiness: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dba-fy-giz">
@@ -71,6 +72,7 @@
                             <constraint firstItem="NYX-XM-ZCf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Jwb-1E-CkD"/>
                             <constraint firstItem="sEi-ha-Ch4" firstAttribute="centerX" secondItem="axV-ir-ve2" secondAttribute="centerX" id="N1r-Ca-CH3"/>
                             <constraint firstItem="fA0-hc-zdf" firstAttribute="trailing" secondItem="dKy-wL-Jwl" secondAttribute="trailing" id="Q7d-Bh-yP4"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NYX-XM-ZCf" secondAttribute="trailing" constant="20" symbolic="YES" id="Rkh-Um-Rz0"/>
                             <constraint firstItem="NYX-XM-ZCf" firstAttribute="top" secondItem="fA0-hc-zdf" secondAttribute="top" id="TAP-OD-AtD"/>
                             <constraint firstItem="dKy-wL-Jwl" firstAttribute="trailing" secondItem="axV-ir-ve2" secondAttribute="trailing" id="aL1-HU-50Q"/>
                             <constraint firstItem="Dba-fy-giz" firstAttribute="baseline" secondItem="dKy-wL-Jwl" secondAttribute="baseline" id="ay1-iY-ERF"/>
@@ -126,7 +128,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qp9-mI-ov5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-279" y="133"/>
+            <point key="canvasLocation" x="-103" y="121"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Hvl-RS-y4K">
