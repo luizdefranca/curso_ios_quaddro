@@ -15,6 +15,12 @@ class ViewController: UIViewController {
 
         let valor = "Teste"
         
+        var arrayNumerosEmStrings = ["um", "dois", "tres", "quatro", "cinco"]
+        let numero = arrayNumerosEmStrings[2]
+        print(numero)
+        
+        arrayNumerosEmStrings[2] = "trocado"
+        print(arrayNumerosEmStrings[2])
     }
 
 
