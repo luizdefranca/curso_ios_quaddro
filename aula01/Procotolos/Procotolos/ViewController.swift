@@ -8,17 +8,52 @@
 
 import UIKit
 
+//criando um protocolo
+
+protocol MeuProcolo  {
+    
+    //propriedade do protocolo
+    var propriedadeRequiredGet : Int{get}
+    var propriedadeRequiredGetSet : Int{get set}
+    
+    //Método do protocolo
+    func metodoDoProcolo()
+}
+
+class MinhaClasse: MeuProcolo{
+    
+    var propriedadeRequiredGet: Int{
+        return 10
+    }
+    
+    var propriedadeRequiredGetSet: Int
+    
+    func metodoDoProcolo() {
+        print("Método do protocolo acionado")
+    }
+    
+    init(){
+        propriedadeRequiredGetSet = 10
+    }
+    
+    
+}
+
+
+
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        let obj = MinhaClasse()
+//        obj.propriedadeRequiredGet = 30
+        obj.propriedadeRequiredGetSet = 30
+        
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
 
 }
