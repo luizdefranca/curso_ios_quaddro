@@ -13,12 +13,20 @@ class MealsTableViewController : UITableViewController, AddAMealDelegate {
     var meals = [Meal(name: "Eggplant Brownie", happiness: 5),
                  Meal(name: "Zucchini Muffin", happiness: 3),
                  Meal(name: "Daniela's Cheesecake", happiness: 5)]
-    
+
+    override func viewDidLoad() {
+        self.meals = Dao().loadMeals()
+        
+    }
     func add(_ meal:Meal) {
         print("adding \(meal.name)")
         meals.append(meal)
+        Dao().saveMeals(self.meals)
+       
         tableView.reloadData()
     }
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "addMeal") {

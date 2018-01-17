@@ -30,6 +30,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func add(_ item: Item) {
         items.append(item)
         
+        NSKeyedArchiver.archiveRootObject(self.items, toFile: getArchive())
         if let table = tableView {
             table.reloadData()
         } else {
@@ -37,9 +38,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
+    func getArchive() -> String{
+        let userDirs = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+        let dir = userDirs[0]
+        let archive = "\(dir)/eggplant-browie-items.dados"
+        return archive
+    }
+    
     override func viewDidLoad() {
         let newItemButton = UIBarButtonItem(title: "new item", style: UIBarButtonItemStyle.plain, target: self, action: #selector(showNewItem))
         navigationItem.rightBarButtonItem = newItemButton
+        self.items = Dao().loadItems()
+        
     }
     
     func showNewItem() {

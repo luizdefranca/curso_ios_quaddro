@@ -23,6 +23,7 @@
 		B9C4FF411DC3631B00BBECCD /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C4FF401DC3631B00BBECCD /* Alert.swift */; };
 		B9F1DD5F1D9975CD009E7B93 /* MealsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F1DD5E1D9975CD009E7B93 /* MealsTableViewController.swift */; };
 		B9F1DD651D999C32009E7B93 /* AddAMealDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F1DD641D999C32009E7B93 /* AddAMealDelegate.swift */; };
+		C2D41F1B200FCD420026BC2E /* Dao.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D41F1A200FCD420026BC2E /* Dao.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		B9C4FF401DC3631B00BBECCD /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		B9F1DD5E1D9975CD009E7B93 /* MealsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealsTableViewController.swift; sourceTree = "<group>"; };
 		B9F1DD641D999C32009E7B93 /* AddAMealDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAMealDelegate.swift; sourceTree = "<group>"; };
+		C2D41F1A200FCD420026BC2E /* Dao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dao.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		B9095FAB1D8FFD3A00E8A303 /* eggplant-brownie */ = {
 			isa = PBXGroup;
 			children = (
+				C2D41F19200FCCF60026BC2E /* dao */,
 				B9A116C71D9938F300C5049E /* models */,
 				B9A116C81D9938F300C5049E /* viewcontrollers */,
 				B9A116C91D9938F300C5049E /* views */,
@@ -176,6 +179,14 @@
 				B9C4FF401DC3631B00BBECCD /* Alert.swift */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		C2D41F19200FCCF60026BC2E /* dao */ = {
+			isa = PBXGroup;
+			children = (
+				C2D41F1A200FCD420026BC2E /* Dao.swift */,
+			);
+			path = dao;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +327,7 @@
 			files = (
 				B9B8B8591DC37B3500EA2168 /* RemoveMealController.swift in Sources */,
 				B9C4FF411DC3631B00BBECCD /* Alert.swift in Sources */,
+				C2D41F1B200FCD420026BC2E /* Dao.swift in Sources */,
 				B9F1DD5F1D9975CD009E7B93 /* MealsTableViewController.swift in Sources */,
 				B9A116CD1D99397800C5049E /* Item.swift in Sources */,
 				B9A116CB1D99390E00C5049E /* Meal.swift in Sources */,
