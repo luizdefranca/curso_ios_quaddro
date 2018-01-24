@@ -10,15 +10,31 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //MARK: - IBOutlet
+    @IBOutlet weak var textViewUnica: UITextView!
+    
+    //MARK: - Proprieties
+    
+    //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.textViewUnica.text = nil
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    //MARK: - Actions
+    @IBAction func clicouVoltar(_ sender: Any) {
+        self.textViewUnica.text = "voltar"
     }
+    
+    @IBAction func cliclouPlay(_ sender: UIBarButtonItem) {
+        self.textViewUnica.text = "Play"
+    }
+    
+    
+    @IBAction func clicouAvançar(_ sender: UIBarButtonItem) {
+        self.textViewUnica.text = "avançar"
+    }
+    //MARK: - Metods
 
 
 }

@@ -18,20 +18,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CnS-ak-83W">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CnS-ak-83W">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Item" id="RGH-RP-Gbo"/>
+                                    <barButtonItem title="voltar" id="RGH-RP-Gbo">
+                                        <connections>
+                                            <action selector="clicouVoltar:" destination="BYZ-38-t0r" id="q2D-rf-Xg5"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Uay-83-Z0l"/>
+                                    <barButtonItem title="play" id="zSL-gp-8HL">
+                                        <connections>
+                                            <action selector="cliclouPlay:" destination="BYZ-38-t0r" id="dvo-MA-7YB"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="FPv-IV-3dT"/>
+                                    <barButtonItem title="avançar" id="2I2-1k-8TD">
+                                        <connections>
+                                            <action selector="clicouAvançar:" destination="BYZ-38-t0r" id="cWl-ly-2qd"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="44a-fu-b5k">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CnS-ak-83W" firstAttribute="top" secondItem="44a-fu-b5k" secondAttribute="bottom" id="Jhu-FL-p8W"/>
+                            <constraint firstItem="CnS-ak-83W" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="OOc-si-ww8"/>
+                            <constraint firstItem="44a-fu-b5k" firstAttribute="trailing" secondItem="CnS-ak-83W" secondAttribute="trailing" id="XcZ-no-kXe"/>
+                            <constraint firstItem="44a-fu-b5k" firstAttribute="leading" secondItem="CnS-ak-83W" secondAttribute="leading" id="dGa-J4-LUF"/>
+                            <constraint firstAttribute="trailing" secondItem="44a-fu-b5k" secondAttribute="trailing" id="mJg-hf-XJK"/>
+                            <constraint firstItem="44a-fu-b5k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pEU-Cx-R9w"/>
+                            <constraint firstItem="44a-fu-b5k" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tUg-tJ-BWd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="textViewUnica" destination="44a-fu-b5k" id="nsi-m6-vvD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

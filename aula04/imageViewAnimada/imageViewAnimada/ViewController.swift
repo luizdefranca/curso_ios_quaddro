@@ -51,7 +51,7 @@ class ViewController: UIViewController {
         
     }
     
-    //MARK: - Metods
+    //MARK: - Methods
    
 
 

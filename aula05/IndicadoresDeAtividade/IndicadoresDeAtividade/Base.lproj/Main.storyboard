@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IndicadoresDeAtividade" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qJG-3P-OE3">
+                                <rect key="frame" x="136" y="185" width="51" height="31"/>
+                                <connections>
+                                    <action selector="alterouSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="aYs-L3-3PP"/>
+                                </connections>
+                            </switch>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="eSr-KW-Gch">
+                                <rect key="frame" x="150" y="86" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="O3a-xd-kV0">
+                                <rect key="frame" x="66" y="298" width="189" height="2"/>
+                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="6Q8-SR-qlA">
+                                <rect key="frame" x="113" y="415" width="94" height="29"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="alterouStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="c8C-Rk-aED"/>
+                                </connections>
+                            </stepper>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6Q8-SR-qlA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Q5-xi-bgE"/>
+                            <constraint firstItem="O3a-xd-kV0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BKD-j5-6Eb"/>
+                            <constraint firstItem="eSr-KW-Gch" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="HfG-Ew-fTf"/>
+                            <constraint firstItem="qJG-3P-OE3" firstAttribute="top" secondItem="eSr-KW-Gch" secondAttribute="bottom" constant="79" id="Vq1-hl-6Gw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6Q8-SR-qlA" secondAttribute="bottom" constant="124" id="WmH-S3-RUa"/>
+                            <constraint firstItem="eSr-KW-Gch" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zym-ia-113"/>
+                            <constraint firstItem="O3a-xd-kV0" firstAttribute="top" secondItem="qJG-3P-OE3" secondAttribute="bottom" constant="82" id="hED-QA-X5m"/>
+                            <constraint firstItem="O3a-xd-kV0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="hHV-Dv-ADH"/>
+                            <constraint firstItem="qJG-3P-OE3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sGz-BO-GI8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="meuActivityIndicator" destination="eSr-KW-Gch" id="HEq-43-Qxl"/>
+                        <outlet property="meuProgressView" destination="O3a-xd-kV0" id="6Sk-mJ-vDW"/>
+                        <outlet property="meuStepper" destination="6Q8-SR-qlA" id="NMV-DB-4cc"/>
+                        <outlet property="meuSwitch" destination="qJG-3P-OE3" id="8My-Bu-Oeb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
