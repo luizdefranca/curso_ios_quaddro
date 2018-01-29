@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIAlertController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sk4-rA-q4Y">
+                                <rect key="frame" x="138" y="73" width="99" height="30"/>
+                                <state key="normal" title="Alerta Comum"/>
+                                <connections>
+                                    <action selector="criaAlertaComum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bsB-nt-Zwr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UcB-0z-wef">
+                                <rect key="frame" x="60" y="220" width="255" height="30"/>
+                                <state key="normal" title="Alerta com Senha"/>
+                                <connections>
+                                    <action selector="criaAlertaComSenha:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yRl-f7-qn1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dfl-fl-6fs">
+                                <rect key="frame" x="60" y="141" width="255" height="30"/>
+                                <state key="normal" title="Alerta com Texto"/>
+                                <connections>
+                                    <action selector="criaAlertaComTexto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mIB-se-0NL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avD-1b-Dx9">
+                                <rect key="frame" x="60" y="294" width="255" height="30"/>
+                                <state key="normal" title="Alerta com Login e Senha"/>
+                                <connections>
+                                    <action selector="criaAlertaComLoginSenha:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7no-yb-jsu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIC-cy-a2V">
+                                <rect key="frame" x="69" y="381" width="255" height="30"/>
+                                <state key="normal" title="Action Sheet"/>
+                                <connections>
+                                    <action selector="criaActionSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7dt-AX-PLs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eIC-cy-a2V" firstAttribute="top" secondItem="avD-1b-Dx9" secondAttribute="bottom" constant="57" id="BE6-K0-nHv"/>
+                            <constraint firstItem="Dfl-fl-6fs" firstAttribute="trailing" secondItem="UcB-0z-wef" secondAttribute="trailing" id="Bm1-kA-LLc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eIC-cy-a2V" secondAttribute="trailing" constant="51" id="D2X-sh-bGQ"/>
+                            <constraint firstItem="Dfl-fl-6fs" firstAttribute="leading" secondItem="UcB-0z-wef" secondAttribute="leading" id="FzB-Dg-MeC"/>
+                            <constraint firstItem="Dfl-fl-6fs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="Wgq-Ya-xz1"/>
+                            <constraint firstItem="UcB-0z-wef" firstAttribute="leading" secondItem="avD-1b-Dx9" secondAttribute="leading" id="ZhB-Qs-NfN"/>
+                            <constraint firstItem="sk4-rA-q4Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g0l-Zj-rUY"/>
+                            <constraint firstItem="UcB-0z-wef" firstAttribute="top" secondItem="Dfl-fl-6fs" secondAttribute="bottom" constant="49" id="mGS-1a-MoG"/>
+                            <constraint firstItem="avD-1b-Dx9" firstAttribute="top" secondItem="UcB-0z-wef" secondAttribute="bottom" constant="44" id="qOf-CJ-tSi"/>
+                            <constraint firstItem="sk4-rA-q4Y" firstAttribute="centerX" secondItem="Dfl-fl-6fs" secondAttribute="centerX" id="qXo-yF-YPC"/>
+                            <constraint firstItem="eIC-cy-a2V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="uwP-z1-mPn"/>
+                            <constraint firstItem="sk4-rA-q4Y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="vJw-Mf-jkZ"/>
+                            <constraint firstItem="Dfl-fl-6fs" firstAttribute="top" secondItem="sk4-rA-q4Y" secondAttribute="bottom" constant="38" id="xBb-DA-Vnw"/>
+                            <constraint firstItem="UcB-0z-wef" firstAttribute="trailing" secondItem="avD-1b-Dx9" secondAttribute="trailing" id="ynw-U1-FHA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
