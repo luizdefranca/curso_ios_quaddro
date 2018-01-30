@@ -12,6 +12,9 @@
 		C2CDF835201EC0F4008DE6CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2CDF833201EC0F4008DE6CC /* Main.storyboard */; };
 		C2CDF837201EC0F4008DE6CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2CDF836201EC0F4008DE6CC /* Assets.xcassets */; };
 		C2CDF83A201EC0F4008DE6CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2CDF838201EC0F4008DE6CC /* LaunchScreen.storyboard */; };
+		C2CDF846201FA7E7008DE6CC /* CustomAlertView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2CDF845201FA7E7008DE6CC /* CustomAlertView.storyboard */; };
+		C2CDF848201FA811008DE6CC /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CDF847201FA811008DE6CC /* CustomAlertView.swift */; };
+		C2CDF84A201FEB6C008DE6CC /* CustomAlertViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CDF849201FEB6C008DE6CC /* CustomAlertViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		C2CDF836201EC0F4008DE6CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2CDF839201EC0F4008DE6CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2CDF83B201EC0F4008DE6CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2CDF845201FA7E7008DE6CC /* CustomAlertView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomAlertView.storyboard; sourceTree = "<group>"; };
+		C2CDF847201FA811008DE6CC /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		C2CDF849201FEB6C008DE6CC /* CustomAlertViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				C2CDF836201EC0F4008DE6CC /* Assets.xcassets */,
 				C2CDF838201EC0F4008DE6CC /* LaunchScreen.storyboard */,
 				C2CDF83B201EC0F4008DE6CC /* Info.plist */,
+				C2CDF845201FA7E7008DE6CC /* CustomAlertView.storyboard */,
+				C2CDF849201FEB6C008DE6CC /* CustomAlertViewDelegate.swift */,
+				C2CDF847201FA811008DE6CC /* CustomAlertView.swift */,
 			);
 			path = UIAlertController;
 			sourceTree = "<group>";
@@ -126,6 +135,7 @@
 				C2CDF83A201EC0F4008DE6CC /* LaunchScreen.storyboard in Resources */,
 				C2CDF837201EC0F4008DE6CC /* Assets.xcassets in Resources */,
 				C2CDF835201EC0F4008DE6CC /* Main.storyboard in Resources */,
+				C2CDF846201FA7E7008DE6CC /* CustomAlertView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2CDF848201FA811008DE6CC /* CustomAlertView.swift in Sources */,
+				C2CDF84A201FEB6C008DE6CC /* CustomAlertViewDelegate.swift in Sources */,
 				C2CDF832201EC0F4008DE6CC /* ViewController.swift in Sources */,
 				C2CDF830201EC0F4008DE6CC /* AppDelegate.swift in Sources */,
 			);
