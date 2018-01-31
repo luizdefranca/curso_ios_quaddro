@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DesafioUIAlertController_Aula09" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="08Z-lC-5J5">
+                                <rect key="frame" x="16" y="32" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HaZ-FV-aaB">
+                                <rect key="frame" x="16" y="86" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAr-f6-aVS">
+                                <rect key="frame" x="126" y="171" width="68" height="30"/>
+                                <state key="normal" title="Cadastrar"/>
+                                <connections>
+                                    <action selector="cadastrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rMH-bv-nbM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IYf-Ng-PYm">
+                                <rect key="frame" x="133" y="238" width="55" height="30"/>
+                                <state key="normal" title="Acessar"/>
+                                <connections>
+                                    <action selector="acessar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zpZ-1d-V9l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efr-qs-7YS">
+                                <rect key="frame" x="106" y="301" width="109" height="30"/>
+                                <state key="normal" title="Ação Destrutiva">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="acaoDestrutiva:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JNc-ip-jhT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="08Z-lC-5J5" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="36:71" id="19Y-Ur-kcc"/>
+                            <constraint firstItem="FAr-f6-aVS" firstAttribute="top" secondItem="HaZ-FV-aaB" secondAttribute="bottom" constant="55" id="4cY-Ir-ND2"/>
+                            <constraint firstItem="HaZ-FV-aaB" firstAttribute="centerX" secondItem="08Z-lC-5J5" secondAttribute="centerX" id="6Vy-qk-A4J"/>
+                            <constraint firstItem="HaZ-FV-aaB" firstAttribute="top" secondItem="08Z-lC-5J5" secondAttribute="bottom" constant="24" id="Ete-bk-Oga"/>
+                            <constraint firstItem="IYf-Ng-PYm" firstAttribute="top" secondItem="FAr-f6-aVS" secondAttribute="bottom" constant="37" id="Znd-h0-awE"/>
+                            <constraint firstItem="08Z-lC-5J5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="drW-eX-xWD"/>
+                            <constraint firstItem="HaZ-FV-aaB" firstAttribute="height" secondItem="08Z-lC-5J5" secondAttribute="height" id="fit-hg-xgc"/>
+                            <constraint firstItem="IYf-Ng-PYm" firstAttribute="centerX" secondItem="FAr-f6-aVS" secondAttribute="centerX" id="j6L-CP-e1g"/>
+                            <constraint firstItem="efr-qs-7YS" firstAttribute="centerX" secondItem="IYf-Ng-PYm" secondAttribute="centerX" id="jFc-6a-tVa"/>
+                            <constraint firstItem="efr-qs-7YS" firstAttribute="top" secondItem="IYf-Ng-PYm" secondAttribute="bottom" constant="33" id="oLS-n9-UPm"/>
+                            <constraint firstItem="08Z-lC-5J5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qaa-Tb-Nw3"/>
+                            <constraint firstItem="HaZ-FV-aaB" firstAttribute="width" secondItem="08Z-lC-5J5" secondAttribute="width" id="utg-uj-g75"/>
+                            <constraint firstItem="FAr-f6-aVS" firstAttribute="centerX" secondItem="HaZ-FV-aaB" secondAttribute="centerX" id="yY8-jX-Oa9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonAcaoDestrutiva" destination="efr-qs-7YS" id="Bqk-MK-y7q"/>
+                        <outlet property="buttonAcessar" destination="IYf-Ng-PYm" id="etH-8o-aub"/>
+                        <outlet property="buttonCadastrar" destination="FAr-f6-aVS" id="mUI-e6-Y0p"/>
+                        <outlet property="textFieldLogin" destination="08Z-lC-5J5" id="lHp-mY-nff"/>
+                        <outlet property="textFieldSenha" destination="HaZ-FV-aaB" id="VK8-Nx-YL5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-24.375" y="133.09859154929578"/>
+        </scene>
+    </scenes>
+</document>

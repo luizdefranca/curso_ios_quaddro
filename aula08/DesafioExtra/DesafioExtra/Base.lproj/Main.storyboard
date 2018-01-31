@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DesafioExtra" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha uma dificuldade para o sorteio." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bus-dO-wCb">
+                                <rect key="frame" x="17.5" y="40" width="340" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtW-q3-Nga">
+                                <rect key="frame" x="150" y="171" width="75" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="JKQ-Sq-AVe"/>
+                                    <constraint firstAttribute="height" constant="30" id="P2Q-VR-I9C"/>
+                                </constraints>
+                                <state key="normal" title="Sortear"/>
+                                <connections>
+                                    <action selector="Sortear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aoU-a2-ybH"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2i9-Vi-Mb2">
+                                <rect key="frame" x="139" y="217" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="jS0-Ms-ANA"/>
+                                    <constraint firstAttribute="height" constant="30" id="uC1-eo-Nva"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gmy-wD-0cy">
+                                <rect key="frame" x="20" y="277" width="335" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="335" id="rgD-2U-WWQ"/>
+                                    <constraint firstAttribute="height" constant="128" id="wWf-yo-Vh3"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="GYP-EU-MdJ">
+                                <rect key="frame" x="24" y="104" width="326" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="326" id="BWD-9F-C8d"/>
+                                    <constraint firstAttribute="height" constant="28" id="ZTc-Sz-zAx"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Easy"/>
+                                    <segment title="Medium"/>
+                                    <segment title="Hard"/>
+                                </segments>
+                                <connections>
+                                    <action selector="escolherDificuldade:" destination="BYZ-38-t0r" eventType="valueChanged" id="34P-WY-7a7"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bus-dO-wCb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="2dh-Hm-u5p"/>
+                            <constraint firstItem="BtW-q3-Nga" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8kM-MA-8WI"/>
+                            <constraint firstItem="Bus-dO-wCb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GlJ-BO-76q"/>
+                            <constraint firstItem="BtW-q3-Nga" firstAttribute="top" secondItem="GYP-EU-MdJ" secondAttribute="bottom" constant="39" id="V1q-Rk-sc7"/>
+                            <constraint firstItem="GYP-EU-MdJ" firstAttribute="top" secondItem="Bus-dO-wCb" secondAttribute="bottom" constant="43" id="XdF-hG-ZKY"/>
+                            <constraint firstItem="2i9-Vi-Mb2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hJD-Xs-qFf"/>
+                            <constraint firstItem="gmy-wD-0cy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="i7a-ag-ljX"/>
+                            <constraint firstItem="GYP-EU-MdJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-0.5" id="ltY-65-4yE"/>
+                            <constraint firstItem="2i9-Vi-Mb2" firstAttribute="top" secondItem="BtW-q3-Nga" secondAttribute="bottom" constant="16" id="nOB-oY-FPq"/>
+                            <constraint firstItem="Bus-dO-wCb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="340:667" id="pAh-mP-ZqM"/>
+                            <constraint firstItem="gmy-wD-0cy" firstAttribute="top" secondItem="2i9-Vi-Mb2" secondAttribute="bottom" constant="30" id="s26-A1-QGc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonSortear" destination="BtW-q3-Nga" id="cbd-GK-838"/>
+                        <outlet property="textFieldKick" destination="2i9-Vi-Mb2" id="GFe-sA-aWh"/>
+                        <outlet property="textViewResult" destination="gmy-wD-0cy" id="UFL-d4-UXi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.199999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
