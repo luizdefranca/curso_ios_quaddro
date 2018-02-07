@@ -10,26 +10,40 @@ import UIKit
 
 class Tela2ViewController: UIViewController {
 
+    //MARK: - IBOutlet
+    
+    //MARK: - Proprieties
+    
+    //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view, typically from a nib.
+        print("tela 2 - viewDidLoad")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        print("tela 2 - viewWillAppear")
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(_ animated: Bool) {
+        print("tela 2 - viewDidAppear")
     }
-    */
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        print("tela 2 - viewWillDisappear")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        print("tela 2 - viewDidDisappear")
+    }
+    //MARK: - Actions
+    
+    @IBAction func voltarSemSegue(_ sender: UIButton) {
+        
+        //Com o comando abaixo conseguimos voltar para a tela
+        self.dismiss(animated: true) {
+            print("Tela desimpilhada")
+        }
+    }
+    //MARK: - Metods
 
 }

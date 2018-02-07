@@ -59,6 +59,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXu-Hu-bf4">
                                 <rect key="frame" x="128" y="326" width="119" height="30"/>
                                 <state key="normal" title="Voltar sem segue"/>
+                                <connections>
+                                    <action selector="voltarSemSegue:" destination="cw3-Gw-GdB" eventType="touchUpInside" id="lB7-uZ-oqc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQk-T8-QNe">
                                 <rect key="frame" x="127" y="184" width="120" height="30"/>
