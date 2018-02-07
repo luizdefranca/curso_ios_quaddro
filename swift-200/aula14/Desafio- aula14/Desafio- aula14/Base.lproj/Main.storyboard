@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Desafio__aula14" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZ1-sG-EMq">
+                                <rect key="frame" x="40" y="42" width="12" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Y" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCt-fr-9Yh">
+                                <rect key="frame" x="40" y="99" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aln-kP-jTp">
+                                <rect key="frame" x="166" y="98" width="193" height="21"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="RrT-2u-3YC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wO5-R1-lcj">
+                                <rect key="frame" x="166" y="42" width="193" height="21"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="193" id="DCI-QM-Rhp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feliz.png" translatesAutoresizingMaskIntoConstraints="NO" id="giV-g6-GcL">
+                                <rect key="frame" x="104" y="283" width="166" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="DLW-Bk-6Oh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="giV-g6-GcL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4tR-wR-OSb"/>
+                            <constraint firstItem="wO5-R1-lcj" firstAttribute="leading" secondItem="Aln-kP-jTp" secondAttribute="leading" id="6Tb-Hh-JMa"/>
+                            <constraint firstItem="FZ1-sG-EMq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="AHE-ae-8fF"/>
+                            <constraint firstItem="FZ1-sG-EMq" firstAttribute="leading" secondItem="MCt-fr-9Yh" secondAttribute="leading" id="DgT-Fv-Bhg"/>
+                            <constraint firstItem="wO5-R1-lcj" firstAttribute="trailing" secondItem="Aln-kP-jTp" secondAttribute="trailing" id="FLm-aa-FCc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="giV-g6-GcL" secondAttribute="bottom" constant="256" id="Feb-KQ-bw3"/>
+                            <constraint firstItem="FZ1-sG-EMq" firstAttribute="baseline" secondItem="wO5-R1-lcj" secondAttribute="firstBaseline" id="H6x-O0-LBH"/>
+                            <constraint firstItem="FZ1-sG-EMq" firstAttribute="baseline" secondItem="wO5-R1-lcj" secondAttribute="baseline" id="IG9-zg-r8p"/>
+                            <constraint firstItem="FZ1-sG-EMq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="LjF-lk-f9P"/>
+                            <constraint firstItem="wO5-R1-lcj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="PW5-yS-4lo"/>
+                            <constraint firstItem="MCt-fr-9Yh" firstAttribute="top" secondItem="FZ1-sG-EMq" secondAttribute="bottom" constant="36" id="g7j-XZ-FQO"/>
+                            <constraint firstItem="Aln-kP-jTp" firstAttribute="top" secondItem="wO5-R1-lcj" secondAttribute="bottom" constant="35" id="sEG-Ei-6GV"/>
+                            <constraint firstItem="giV-g6-GcL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="xD8-RL-d5p"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewUnica" destination="giV-g6-GcL" id="8GP-Pc-cTN"/>
+                        <outlet property="labelX" destination="wO5-R1-lcj" id="xe6-K6-ebW"/>
+                        <outlet property="labelY" destination="Aln-kP-jTp" id="TmK-kx-opB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="feliz.png" width="120" height="120"/>
+    </resources>
+</document>
