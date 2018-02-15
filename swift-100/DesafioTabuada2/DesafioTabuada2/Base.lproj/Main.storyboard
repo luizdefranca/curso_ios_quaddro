@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DesafioTabuada2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Fee-J0-B6T">
+                                <rect key="frame" x="16" y="132" width="343" height="29"/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                    <segment title="6"/>
+                                    <segment title="7"/>
+                                    <segment title="8"/>
+                                    <segment title="9"/>
+                                    <segment title="10"/>
+                                </segments>
+                                <connections>
+                                    <action selector="alterarSomar:" destination="BYZ-38-t0r" eventType="valueChanged" id="chG-3t-GB0"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Wxf-zd-JqM">
+                                <rect key="frame" x="16" y="397" width="343" height="29"/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                    <segment title="6"/>
+                                    <segment title="7"/>
+                                    <segment title="8"/>
+                                    <segment title="9"/>
+                                    <segment title="10"/>
+                                </segments>
+                                <connections>
+                                    <action selector="alterarSomar:" destination="BYZ-38-t0r" eventType="valueChanged" id="zf2-jG-pS3"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLx-gi-cR0">
+                                <rect key="frame" x="81" y="226" width="212" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fee-J0-B6T" firstAttribute="leading" secondItem="Wxf-zd-JqM" secondAttribute="leading" id="QId-i2-sdw"/>
+                            <constraint firstItem="Fee-J0-B6T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="112" id="azp-2l-ZEZ"/>
+                            <constraint firstItem="Fee-J0-B6T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="g9z-3G-9zY"/>
+                            <constraint firstItem="Fee-J0-B6T" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="lKc-VI-ecG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wxf-zd-JqM" secondAttribute="bottom" constant="242" id="qe8-ro-b0H"/>
+                            <constraint firstItem="Fee-J0-B6T" firstAttribute="trailing" secondItem="Wxf-zd-JqM" secondAttribute="trailing" id="uB0-0k-lWf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelResultado" destination="QLx-gi-cR0" id="D18-75-dXL"/>
+                        <outlet property="primeiroSegment" destination="Fee-J0-B6T" id="7VS-Ib-MER"/>
+                        <outlet property="segundoSegment" destination="Wxf-zd-JqM" id="EZf-Wl-TZf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-599.20000000000005" y="91.304347826086968"/>
+        </scene>
+    </scenes>
+</document>
