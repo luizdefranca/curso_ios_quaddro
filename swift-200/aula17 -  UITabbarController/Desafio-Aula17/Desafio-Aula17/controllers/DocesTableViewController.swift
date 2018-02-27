@@ -10,13 +10,10 @@ import UIKit
 
 class DocesTableViewController: UITableViewController {
 
-    let docesArray = ["Pave de chocolate", "Torta Alemã", "Pudim de doce de leite", "Doce de coco com mamão", "Petit Gateu"]
-    
+    let sobremesaArray = SobremesaDao().listarSobremesas()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
+       
     }
     
     
@@ -29,16 +26,30 @@ class DocesTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.docesArray.count
+        return self.sobremesaArray.count
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "docesCell", for: indexPath)
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "docesCell", for: indexPath)
+//        let row = indexPath.row
+//        cell.textLabel?.text = docesArray[row]
+//
+//        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "sobremesasCell", for: indexPath)
         let row = indexPath.row
-        cell.textLabel?.text = docesArray[row]
+        let sobremesa = sobremesaArray[row]
+        
+        cell.textLabel?.text = sobremesa.nome
+        cell.detailTextLabel?.text = "\(sobremesa.preco)"
+        let img = sobremesa.imagens?[0]
+        
+        cell.imageView?.image = sobremesa.imagens?[0]
+        
         
         return cell
+    
+    
     }
     
 }

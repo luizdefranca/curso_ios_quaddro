@@ -10,16 +10,12 @@ import UIKit
 
 class PratosTableViewController: UITableViewController {
 
-    let pratosArray = ["Feijão Tropeiro", "Ovo Frito", "Frango a passarinho", "Bife com Fritas", "Feijoada", "Churrasco"]
+    let pratosArray = PratoDao().listarPratos()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
         
     }
 
@@ -39,8 +35,14 @@ class PratosTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "pratosCell", for: indexPath)
-         let row = indexPath.row
-         cell.textLabel?.text = pratosArray[row]
+        let row = indexPath.row
+        let prato = pratosArray[row]
+        
+        cell.textLabel?.text = prato.nome
+        cell.detailTextLabel?.text = "\(prato.preco)"
+      //  let imageView = UIImageView(image: prato.imagens?[0])
+       
+        cell.imageView?.image = prato.imagens?[0]
 
         return cell
     }

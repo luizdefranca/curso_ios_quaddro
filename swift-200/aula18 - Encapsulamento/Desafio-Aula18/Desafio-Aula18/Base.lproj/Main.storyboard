@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ncg-4t-SJs">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dolar - Real-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Desafio_Aula18" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Real: R$ 0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hx3-N1-gxj">
+                                <rect key="frame" x="128" y="155" width="119.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dolar: U$ 0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxg-vo-Ah2">
+                                <rect key="frame" x="122" y="415" width="130" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.10000000000000001" minValue="0.0" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="mMG-fp-rsN">
+                                <rect key="frame" x="14" y="280" width="347" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mMG-fp-rsN" secondAttribute="height" multiplier="343:29" id="cvz-2D-VRd"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="converter:" destination="BYZ-38-t0r" eventType="valueChanged" id="bv8-zF-b9T"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yxg-vo-Ah2" firstAttribute="centerX" secondItem="mMG-fp-rsN" secondAttribute="centerX" id="9ke-l1-sLq"/>
+                            <constraint firstItem="yxg-vo-Ah2" firstAttribute="top" secondItem="mMG-fp-rsN" secondAttribute="bottom" constant="106" id="ARB-L8-lBY"/>
+                            <constraint firstItem="Hx3-N1-gxj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Awv-LQ-JDo"/>
+                            <constraint firstItem="Hx3-N1-gxj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="135" id="IOh-l6-aEH"/>
+                            <constraint firstItem="yxg-vo-Ah2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LFT-Rc-bBm"/>
+                            <constraint firstItem="mMG-fp-rsN" firstAttribute="top" secondItem="Hx3-N1-gxj" secondAttribute="bottom" constant="101" id="RrS-Zb-RVN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mMG-fp-rsN" secondAttribute="trailing" constant="16" id="WbW-Tu-jBp"/>
+                            <constraint firstItem="mMG-fp-rsN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lXU-eM-nGS"/>
+                            <constraint firstItem="mMG-fp-rsN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="rFn-mw-Tk9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dolar - Real" image="ic_attach_money_36pt.png" selectedImage="ic_attach_money_36pt.png" id="lh1-et-Cgk"/>
+                    <connections>
+                        <outlet property="dolarLabel" destination="yxg-vo-Ah2" id="2NW-UE-Nt0"/>
+                        <outlet property="realLabel" destination="Hx3-N1-gxj" id="Yn5-iK-zF7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92" y="-162.3688155922039"/>
+        </scene>
+        <!--Meta -IMC-->
+        <scene sceneID="Q5S-LE-SYs">
+            <objects>
+                <viewController id="4ON-fE-dJg" customClass="IMCViewController" customModule="Desafio_Aula18" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="td0-Du-32J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.10000000000000001" minValue="0.0" maxValue="250" translatesAutoresizingMaskIntoConstraints="NO" id="CY6-QX-mrx">
+                                <rect key="frame" x="14" y="116" width="348" height="31"/>
+                                <connections>
+                                    <action selector="mudarPeso:" destination="4ON-fE-dJg" eventType="valueChanged" id="4UK-qT-7go"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cok-Mx-ESL">
+                                <rect key="frame" x="14" y="234" width="348" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cok-Mx-ESL" secondAttribute="height" multiplier="191:15" constant="-38" id="Hgq-hm-OWe"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="mudarAltura:" destination="4ON-fE-dJg" eventType="valueChanged" id="CF2-Uo-Oyq"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peso (Kg)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uJ-Z0-ZQp">
+                                <rect key="frame" x="148.5" y="86" width="79" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Altura (m)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3T-Zj-tz5">
+                                <rect key="frame" x="147" y="204" width="81" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IMC - 0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUZ-RJ-zL7">
+                                <rect key="frame" x="148" y="353.5" width="79" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="l3T-Zj-tz5" firstAttribute="top" secondItem="CY6-QX-mrx" secondAttribute="bottom" constant="58" id="6g1-2u-xOk"/>
+                            <constraint firstItem="iUZ-RJ-zL7" firstAttribute="top" secondItem="cok-Mx-ESL" secondAttribute="bottom" constant="90" id="956-39-kCB"/>
+                            <constraint firstItem="cok-Mx-ESL" firstAttribute="centerX" secondItem="Ybp-63-xHG" secondAttribute="centerX" id="GzN-Cv-wlk"/>
+                            <constraint firstItem="CY6-QX-mrx" firstAttribute="centerX" secondItem="5uJ-Z0-ZQp" secondAttribute="centerX" id="K0M-kP-rhY"/>
+                            <constraint firstItem="cok-Mx-ESL" firstAttribute="centerX" secondItem="l3T-Zj-tz5" secondAttribute="centerX" id="OrW-ZH-IpT"/>
+                            <constraint firstItem="5uJ-Z0-ZQp" firstAttribute="centerX" secondItem="Ybp-63-xHG" secondAttribute="centerX" id="Tip-jd-LAt"/>
+                            <constraint firstItem="5uJ-Z0-ZQp" firstAttribute="top" secondItem="Ybp-63-xHG" secondAttribute="top" constant="66" id="X9T-ZY-HyJ"/>
+                            <constraint firstItem="cok-Mx-ESL" firstAttribute="top" secondItem="l3T-Zj-tz5" secondAttribute="bottom" constant="8" id="d8C-8V-jtv"/>
+                            <constraint firstItem="CY6-QX-mrx" firstAttribute="leading" secondItem="Ybp-63-xHG" secondAttribute="leading" constant="16" id="gUF-NF-Svo"/>
+                            <constraint firstItem="CY6-QX-mrx" firstAttribute="centerX" secondItem="Ybp-63-xHG" secondAttribute="centerX" id="kFK-TS-e4O"/>
+                            <constraint firstItem="iUZ-RJ-zL7" firstAttribute="centerX" secondItem="cok-Mx-ESL" secondAttribute="centerX" id="lHo-7Q-x4r"/>
+                            <constraint firstItem="CY6-QX-mrx" firstAttribute="top" secondItem="5uJ-Z0-ZQp" secondAttribute="bottom" constant="8" id="sA7-ri-8FC"/>
+                            <constraint firstItem="Ybp-63-xHG" firstAttribute="trailing" secondItem="CY6-QX-mrx" secondAttribute="trailing" constant="15" id="yew-Oe-wlU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ybp-63-xHG"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Meta -IMC" image="ic_directions_run_36pt.png" selectedImage="ic_directions_run_36pt.png" id="WC5-Qd-M2y"/>
+                    <connections>
+                        <outlet property="alturaLabel" destination="l3T-Zj-tz5" id="g6N-hy-qzZ"/>
+                        <outlet property="alturaSlider" destination="cok-Mx-ESL" id="D9C-sw-6Da"/>
+                        <outlet property="imcLabel" destination="iUZ-RJ-zL7" id="cIA-fN-Qaj"/>
+                        <outlet property="pesoLabel" destination="5uJ-Z0-ZQp" id="V4g-C0-csO"/>
+                        <outlet property="pesoSlider" destination="CY6-QX-mrx" id="G9T-rM-2HA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QA4-bC-gWc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1205.5999999999999" y="-98.50074962518741"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="YBG-qW-C9a">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Ncg-4t-SJs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4yf-Yv-RlZ">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="1Zw-VU-64Z"/>
+                        <segue destination="4ON-fE-dJg" kind="relationship" relationship="viewControllers" id="Oj1-3I-wH9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f2B-gK-ddl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="471" y="589"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_attach_money_36pt.png" width="36" height="36"/>
+        <image name="ic_directions_run_36pt.png" width="36" height="36"/>
+    </resources>
+</document>

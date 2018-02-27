@@ -18,4 +18,18 @@ import UIKit
         self.nome = nome
         self.preco = preco
     }
+    
+    convenience init(nome: String, preco: Float, imagem: String){
+        self.init(nome: nome, preco: preco)
+        if let img = UIImage(named: "\(imagem).jpg"){
+        self.imagens = []
+        self.imagens?.append(img)
+        }
+    }
+    
+    convenience init(nome: String, preco: Float, imagems: [UIImage]){
+        self.init(nome: nome, preco: preco)
+        self.imagens = []
+        self.imagens?.append(contentsOf: imagems)
+    }
 }

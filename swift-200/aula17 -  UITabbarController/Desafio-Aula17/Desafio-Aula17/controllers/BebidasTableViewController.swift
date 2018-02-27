@@ -11,8 +11,8 @@ import UIKit
 class BebidasTableViewController: UITableViewController {
 
    
-    let bebidasArray = ["Refrigerante litro", "Refrigerante lata", "Suco natural copo", "Suco natural jarra", "Cerveja itaipava", "Cerveja Antartica", "Cachaça"]
-    
+    let bebidasArray = BebidaDao().listarBebidas()
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,11 +35,17 @@ class BebidasTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "bebidasCell", for: indexPath)
-        let row = indexPath.row
-        cell.textLabel?.text = bebidasArray[row]
-        
-        return cell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "bebidasCell", for: indexPath)
+            let row = indexPath.row
+            let bebida = bebidasArray[row]
+            
+            cell.textLabel?.text = bebida.nome
+            cell.detailTextLabel?.text = "\(bebida.preco)"
+            //  let imageView = UIImageView(image: bebida.imagens?[0])
+            
+            cell.imageView?.image = bebida.imagens?[0]
+            
+            return cell
     }
     
 

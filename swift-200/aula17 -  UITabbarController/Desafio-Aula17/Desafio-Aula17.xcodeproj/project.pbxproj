@@ -14,6 +14,25 @@
 		C239EBC62030F0D000B2F82C /* TipoEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C239EBC52030F0D000B2F82C /* TipoEnum.swift */; };
 		C239EBC82030F26A00B2F82C /* ComIngredientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C239EBC72030F26A00B2F82C /* ComIngredientes.swift */; };
 		C239EBCA2030F38A00B2F82C /* Ingrediente.swift in Sources */ = {isa = PBXBuildFile; fileRef = C239EBC92030F38A00B2F82C /* Ingrediente.swift */; };
+		C2A666C32037867600E789C3 /* PratoDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A666C22037867600E789C3 /* PratoDao.swift */; };
+		C2A666C520378E0100E789C3 /* BebidaDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A666C420378E0100E789C3 /* BebidaDao.swift */; };
+		C2A666C720378EB300E789C3 /* SobremesaDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A666C620378EB300E789C3 /* SobremesaDao.swift */; };
+		C2A666D82037930E00E789C3 /* Refrigerante litro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2A666C82037930A00E789C3 /* Refrigerante litro.jpg */; };
+		C2A666D92037930E00E789C3 /* Bife com Fritas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2A666C92037930A00E789C3 /* Bife com Fritas.jpg */; };
+		C2A666DA2037930E00E789C3 /* Cachaça.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2A666CA2037930A00E789C3 /* Cachaça.jpg */; };
+		C2A666DB2037930E00E789C3 /* Torta Alemã.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2A666CB2037930B00E789C3 /* Torta Alemã.jpg */; };
+		C2A666DC2037930E00E789C3 /* Pudim de doce de leite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2A666CC2037930B00E789C3 /* Pudim de doce de leite.jpg */; };
+		C2A666DD2037930E00E789C3 /* Frago a passarinho.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2A666CD2037930B00E789C3 /* Frago a passarinho.jpg */; };
+		C2A666DE2037930E00E789C3 /* Feijão Tropeiro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2A666CE2037930B00E789C3 /* Feijão Tropeiro.jpg */; };
+		C2A666DF2037930E00E789C3 /* Ovo Frito.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2A666CF2037930C00E789C3 /* Ovo Frito.jpg */; };
+		C2A666E02037930E00E789C3 /* Suco natural jarra.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2A666D02037930C00E789C3 /* Suco natural jarra.jpg */; };
+		C2A666E12037930E00E789C3 /* Doce de coco com mamão.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2A666D12037930C00E789C3 /* Doce de coco com mamão.jpg */; };
+		C2A666E22037930E00E789C3 /* Pave de chocolate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2A666D22037930C00E789C3 /* Pave de chocolate.jpg */; };
+		C2A666E32037930E00E789C3 /* Refrigerante lata.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2A666D32037930D00E789C3 /* Refrigerante lata.jpg */; };
+		C2A666E42037930E00E789C3 /* Feijoada.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2A666D42037930D00E789C3 /* Feijoada.jpg */; };
+		C2A666E52037930E00E789C3 /* Suco natural copo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2A666D52037930D00E789C3 /* Suco natural copo.jpg */; };
+		C2A666E62037930E00E789C3 /* Cerveja itaipava.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2A666D62037930D00E789C3 /* Cerveja itaipava.jpg */; };
+		C2A666E72037930E00E789C3 /* Petit Gateu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2A666D72037930E00E789C3 /* Petit Gateu.jpg */; };
 		C2CFE8A1202E52CC000D486C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CFE8A0202E52CC000D486C /* AppDelegate.swift */; };
 		C2CFE8A3202E52CC000D486C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CFE8A2202E52CC000D486C /* ViewController.swift */; };
 		C2CFE8A6202E52CC000D486C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2CFE8A4202E52CC000D486C /* Main.storyboard */; };
@@ -32,6 +51,25 @@
 		C239EBC52030F0D000B2F82C /* TipoEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipoEnum.swift; sourceTree = "<group>"; };
 		C239EBC72030F26A00B2F82C /* ComIngredientes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComIngredientes.swift; sourceTree = "<group>"; };
 		C239EBC92030F38A00B2F82C /* Ingrediente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingrediente.swift; sourceTree = "<group>"; };
+		C2A666C22037867600E789C3 /* PratoDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PratoDao.swift; sourceTree = "<group>"; };
+		C2A666C420378E0100E789C3 /* BebidaDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BebidaDao.swift; sourceTree = "<group>"; };
+		C2A666C620378EB300E789C3 /* SobremesaDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobremesaDao.swift; sourceTree = "<group>"; };
+		C2A666C82037930A00E789C3 /* Refrigerante litro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Refrigerante litro.jpg"; sourceTree = SOURCE_ROOT; };
+		C2A666C92037930A00E789C3 /* Bife com Fritas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bife com Fritas.jpg"; sourceTree = SOURCE_ROOT; };
+		C2A666CA2037930A00E789C3 /* Cachaça.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cachaça.jpg"; sourceTree = SOURCE_ROOT; };
+		C2A666CB2037930B00E789C3 /* Torta Alemã.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Torta Alemã.jpg"; sourceTree = SOURCE_ROOT; };
+		C2A666CC2037930B00E789C3 /* Pudim de doce de leite.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pudim de doce de leite.jpg"; sourceTree = SOURCE_ROOT; };
+		C2A666CD2037930B00E789C3 /* Frago a passarinho.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Frago a passarinho.jpg"; sourceTree = SOURCE_ROOT; };
+		C2A666CE2037930B00E789C3 /* Feijão Tropeiro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Feijão Tropeiro.jpg"; sourceTree = SOURCE_ROOT; };
+		C2A666CF2037930C00E789C3 /* Ovo Frito.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ovo Frito.jpg"; sourceTree = SOURCE_ROOT; };
+		C2A666D02037930C00E789C3 /* Suco natural jarra.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Suco natural jarra.jpg"; sourceTree = SOURCE_ROOT; };
+		C2A666D12037930C00E789C3 /* Doce de coco com mamão.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Doce de coco com mamão.jpg"; sourceTree = SOURCE_ROOT; };
+		C2A666D22037930C00E789C3 /* Pave de chocolate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pave de chocolate.jpg"; sourceTree = SOURCE_ROOT; };
+		C2A666D32037930D00E789C3 /* Refrigerante lata.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Refrigerante lata.jpg"; sourceTree = SOURCE_ROOT; };
+		C2A666D42037930D00E789C3 /* Feijoada.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Feijoada.jpg; sourceTree = SOURCE_ROOT; };
+		C2A666D52037930D00E789C3 /* Suco natural copo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Suco natural copo.jpg"; sourceTree = SOURCE_ROOT; };
+		C2A666D62037930D00E789C3 /* Cerveja itaipava.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cerveja itaipava.jpg"; sourceTree = SOURCE_ROOT; };
+		C2A666D72037930E00E789C3 /* Petit Gateu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Petit Gateu.jpg"; sourceTree = SOURCE_ROOT; };
 		C2CFE89D202E52CC000D486C /* Desafio-Aula17.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desafio-Aula17.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CFE8A0202E52CC000D486C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2CFE8A2202E52CC000D486C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +118,16 @@
 			path = controllers;
 			sourceTree = "<group>";
 		};
+		C2A666C1203785FB00E789C3 /* dao */ = {
+			isa = PBXGroup;
+			children = (
+				C2A666C22037867600E789C3 /* PratoDao.swift */,
+				C2A666C420378E0100E789C3 /* BebidaDao.swift */,
+				C2A666C620378EB300E789C3 /* SobremesaDao.swift */,
+			);
+			path = dao;
+			sourceTree = "<group>";
+		};
 		C2CFE894202E52CC000D486C = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +147,23 @@
 		C2CFE89F202E52CC000D486C /* Desafio-Aula17 */ = {
 			isa = PBXGroup;
 			children = (
+				C2A666C92037930A00E789C3 /* Bife com Fritas.jpg */,
+				C2A666CA2037930A00E789C3 /* Cachaça.jpg */,
+				C2A666D62037930D00E789C3 /* Cerveja itaipava.jpg */,
+				C2A666D12037930C00E789C3 /* Doce de coco com mamão.jpg */,
+				C2A666CE2037930B00E789C3 /* Feijão Tropeiro.jpg */,
+				C2A666D42037930D00E789C3 /* Feijoada.jpg */,
+				C2A666CD2037930B00E789C3 /* Frago a passarinho.jpg */,
+				C2A666CF2037930C00E789C3 /* Ovo Frito.jpg */,
+				C2A666D22037930C00E789C3 /* Pave de chocolate.jpg */,
+				C2A666D72037930E00E789C3 /* Petit Gateu.jpg */,
+				C2A666CC2037930B00E789C3 /* Pudim de doce de leite.jpg */,
+				C2A666D32037930D00E789C3 /* Refrigerante lata.jpg */,
+				C2A666C82037930A00E789C3 /* Refrigerante litro.jpg */,
+				C2A666D52037930D00E789C3 /* Suco natural copo.jpg */,
+				C2A666D02037930C00E789C3 /* Suco natural jarra.jpg */,
+				C2A666CB2037930B00E789C3 /* Torta Alemã.jpg */,
+				C2A666C1203785FB00E789C3 /* dao */,
 				C239EBBC2030D5FA00B2F82C /* models */,
 				C2CFE8A0202E52CC000D486C /* AppDelegate.swift */,
 				C239EBCB2030F5A500B2F82C /* controllers */,
@@ -169,8 +234,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2A666E62037930E00E789C3 /* Cerveja itaipava.jpg in Resources */,
+				C2A666DC2037930E00E789C3 /* Pudim de doce de leite.jpg in Resources */,
 				C2CFE8AB202E52CC000D486C /* LaunchScreen.storyboard in Resources */,
+				C2A666DE2037930E00E789C3 /* Feijão Tropeiro.jpg in Resources */,
+				C2A666D82037930E00E789C3 /* Refrigerante litro.jpg in Resources */,
+				C2A666DB2037930E00E789C3 /* Torta Alemã.jpg in Resources */,
+				C2A666D92037930E00E789C3 /* Bife com Fritas.jpg in Resources */,
+				C2A666E02037930E00E789C3 /* Suco natural jarra.jpg in Resources */,
+				C2A666E72037930E00E789C3 /* Petit Gateu.jpg in Resources */,
+				C2A666E32037930E00E789C3 /* Refrigerante lata.jpg in Resources */,
 				C2CFE8A8202E52CC000D486C /* Assets.xcassets in Resources */,
+				C2A666DD2037930E00E789C3 /* Frago a passarinho.jpg in Resources */,
+				C2A666E52037930E00E789C3 /* Suco natural copo.jpg in Resources */,
+				C2A666E22037930E00E789C3 /* Pave de chocolate.jpg in Resources */,
+				C2A666E12037930E00E789C3 /* Doce de coco com mamão.jpg in Resources */,
+				C2A666DA2037930E00E789C3 /* Cachaça.jpg in Resources */,
+				C2A666DF2037930E00E789C3 /* Ovo Frito.jpg in Resources */,
+				C2A666E42037930E00E789C3 /* Feijoada.jpg in Resources */,
 				C2CFE8A6202E52CC000D486C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,11 +266,14 @@
 				C2CFE8BB202E5D40000D486C /* BebidasTableViewController.swift in Sources */,
 				C2CFE8B9202E5D36000D486C /* PratosTableViewController.swift in Sources */,
 				C2CFE8A3202E52CC000D486C /* ViewController.swift in Sources */,
+				C2A666C32037867600E789C3 /* PratoDao.swift in Sources */,
 				C2CFE8A1202E52CC000D486C /* AppDelegate.swift in Sources */,
 				C239EBC62030F0D000B2F82C /* TipoEnum.swift in Sources */,
 				C239EBC82030F26A00B2F82C /* ComIngredientes.swift in Sources */,
 				C2CFE8BD202E5D4B000D486C /* DocesTableViewController.swift in Sources */,
+				C2A666C720378EB300E789C3 /* SobremesaDao.swift in Sources */,
 				C239EBC42030EEB400B2F82C /* Sobremesa.swift in Sources */,
+				C2A666C520378E0100E789C3 /* BebidaDao.swift in Sources */,
 				C239EBC02030EE8700B2F82C /* Prato.swift in Sources */,
 				C239EBC22030EEAB00B2F82C /* Bebida.swift in Sources */,
 				C239EBCA2030F38A00B2F82C /* Ingrediente.swift in Sources */,
