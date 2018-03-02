@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VisualizadorImagem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="76V-Tq-bnc">
+                                <rect key="frame" x="0.0" y="20" width="320" height="471"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="76V-Tq-bnc" secondAttribute="height" multiplier="320:471" id="wEf-a5-9ce"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="unH-L4-VV8">
+                                <rect key="frame" x="0.0" y="491" width="320" height="77"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9WF-le-KW5">
+                                        <rect key="frame" x="101" y="23" width="118" height="30"/>
+                                        <state key="normal" title="Escolher Imagem"/>
+                                        <connections>
+                                            <action selector="escolherImagem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gv7-Pz-ie4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="9WF-le-KW5" firstAttribute="centerX" secondItem="unH-L4-VV8" secondAttribute="centerX" id="0Pn-KE-BsV"/>
+                                    <constraint firstItem="9WF-le-KW5" firstAttribute="centerY" secondItem="unH-L4-VV8" secondAttribute="centerY" id="S3y-ev-0Ft"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="76V-Tq-bnc" secondAttribute="trailing" id="DWC-Fi-ahv"/>
+                            <constraint firstItem="unH-L4-VV8" firstAttribute="top" secondItem="76V-Tq-bnc" secondAttribute="bottom" id="Eb6-aC-C8r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="unH-L4-VV8" secondAttribute="trailing" id="Tn5-if-Pap"/>
+                            <constraint firstItem="unH-L4-VV8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fcB-Mn-LMe"/>
+                            <constraint firstItem="unH-L4-VV8" firstAttribute="top" secondItem="76V-Tq-bnc" secondAttribute="bottom" id="hIO-Iu-X1R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="unH-L4-VV8" secondAttribute="bottom" id="kGb-pj-dtV"/>
+                            <constraint firstItem="76V-Tq-bnc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="v00-ok-hWE"/>
+                            <constraint firstItem="76V-Tq-bnc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="v71-aS-OOj"/>
+                            <constraint firstItem="unH-L4-VV8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="xuf-aV-wsP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewResultado" destination="76V-Tq-bnc" id="r42-Hd-ex6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-22.5" y="133.09859154929578"/>
+        </scene>
+    </scenes>
+</document>

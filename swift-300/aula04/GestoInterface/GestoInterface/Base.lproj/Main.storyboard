@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GestoInterface" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zzL-8z-X0n">
+                                <rect key="frame" x="95" y="219" width="130" height="130"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zzL-8z-X0n" secondAttribute="height" multiplier="1:1" id="PQk-Fa-DiC"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="WhW-lE-xfr" appends="YES" id="yBQ-ex-9Nu"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="zzL-8z-X0n" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="68R-TJ-p6K"/>
+                            <constraint firstItem="zzL-8z-X0n" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HlA-mS-oD7"/>
+                            <constraint firstItem="zzL-8z-X0n" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="65:284" id="aiy-BF-tef"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="GTI-Vn-Hf9" appends="YES" id="94Y-bB-B79"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="myView" destination="zzL-8z-X0n" id="kfX-ae-bTU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="GTI-Vn-Hf9">
+                    <connections>
+                        <action selector="dispararTap:" destination="BYZ-38-t0r" id="UR4-am-tMw"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="WhW-lE-xfr">
+                    <connections>
+                        <action selector="dispararPan:" destination="BYZ-38-t0r" id="iWT-6P-McR"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>
