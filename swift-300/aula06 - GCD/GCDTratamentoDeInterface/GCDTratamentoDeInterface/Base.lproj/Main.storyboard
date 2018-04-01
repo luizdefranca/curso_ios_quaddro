@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GCDTratamentoDeInterface" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Md1-h3-KY0">
+                                <rect key="frame" x="139" y="52" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nv-IC-XUY">
+                                <rect key="frame" x="133" y="260" width="55" height="48"/>
+                                <state key="normal" title="Process"/>
+                                <connections>
+                                    <action selector="process:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pRX-wo-ItF"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="J6A-NC-cWs">
+                                <rect key="frame" x="142" y="148" width="37" height="37"/>
+                                <color key="color" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Md1-h3-KY0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="ATn-V2-Iqr"/>
+                            <constraint firstItem="0nv-IC-XUY" firstAttribute="top" secondItem="J6A-NC-cWs" secondAttribute="bottom" constant="75" id="GGP-4K-Zg2"/>
+                            <constraint firstItem="J6A-NC-cWs" firstAttribute="top" secondItem="Md1-h3-KY0" secondAttribute="bottom" constant="75" id="GOJ-OB-4Sg"/>
+                            <constraint firstItem="J6A-NC-cWs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gxd-wc-2Nj"/>
+                            <constraint firstItem="Md1-h3-KY0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Khq-k9-kQc"/>
+                            <constraint firstItem="0nv-IC-XUY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WNf-lg-6NW"/>
+                            <constraint firstItem="0nv-IC-XUY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dCB-Ox-bM5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="J6A-NC-cWs" id="ZlR-6O-ndK"/>
+                        <outlet property="btnProcess" destination="0nv-IC-XUY" id="4bE-AH-sQx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
